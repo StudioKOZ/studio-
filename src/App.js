@@ -35,18 +35,13 @@ export default function Home() {
       clearTimeout(moveTimeout.current);
     };
   }, [handleMouseMove]);
-  const particles = useMemo(() => Array.from({ length: 1500 }).map(() => ({
+  const particles = useMemo(() => Array.from({ length: 2000 }).map(() => ({
     x: Math.random() * window.innerWidth,
     y: Math.random() * window.innerHeight,
     size: Math.random() * 0.5 + 0.2,
-    speed: Math.random() * 0.015 + 0.005
+    speed: Math.random() * 0.01 + 0.005,
+    direction: Math.random() * 2 - 1 // Add random direction
   })), []);
-  const isOverText = (mouseX, mouseY, element) => {
-    if (!element) return false;
-    const rect = element.getBoundingClientRect();
-    return mouseX >= rect.left && mouseX <= rect.right && 
-           mouseY >= rect.top && mouseY <= rect.bottom;
-  };
   return (
     <div className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
       {particles.map((particle, index) => (
@@ -61,11 +56,11 @@ export default function Home() {
             opacity: 0.15,
           }}
           animate={{
-            x: (mousePosition.x - particle.x) * particle.speed,
-            y: (mousePosition.y - particle.y) * particle.speed,
+            x: (mousePosition.x - particle.x) * particle.speed * particle.direction,
+            y: (mousePosition.y - particle.y) * particle.speed * particle.direction,
           }}
           transition={{ 
-            duration: 0.5, // Reduced duration
+            duration: 1,
             ease: "linear",
             type: "tween"
           }}
