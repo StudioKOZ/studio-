@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio KÔZ</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+            font-family: 'Courier New', monospace;
+            text-transform: lowercase;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 20px;
+        }
+        .logo {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5em;
+            letter-spacing: 8px;
+            font-weight: 400;
+        }
+        .menu {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .left-menu {
+            font-size: 1.1em;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+        .right-menu {
+            text-align: right;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+        .footer {
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.1em;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <div class="content">
+        <div class="logo">STUDIO KÔZ</div>
+        <div class="menu">
+            <div class="left-menu">› news</div>
+            <div class="right-menu">
+                › work<br>
+                › about<br>
+                › manifesto<br>
+                › research
+            </div>
+        </div>
+        <div class="footer">architecture + urbanism</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
