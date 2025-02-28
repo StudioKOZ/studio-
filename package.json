@@ -2,7 +2,7 @@
   "name": "studio-koz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://studiokoz.github.io/studio-koz",
+  "homepage": "https://studiokoz.github.io/studio-/",
   "dependencies": {
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
