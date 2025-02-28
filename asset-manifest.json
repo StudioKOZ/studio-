@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/studio-koz/static/css/main.48f33169.css",
-    "main.js": "/studio-koz/static/js/main.f0c18ef5.js",
-    "index.html": "/studio-koz/index.html",
-    "main.48f33169.css.map": "/studio-koz/static/css/main.48f33169.css.map",
-    "main.f0c18ef5.js.map": "/studio-koz/static/js/main.f0c18ef5.js.map"
+    "main.css": "/studio-/static/css/main.48f33169.css",
+    "main.js": "/studio-/static/js/main.f0c18ef5.js",
+    "index.html": "/studio-/index.html",
+    "main.48f33169.css.map": "/studio-/static/css/main.48f33169.css.map",
+    "main.f0c18ef5.js.map": "/studio-/static/js/main.f0c18ef5.js.map"
   },
   "entrypoints": [
     "static/css/main.48f33169.css",
